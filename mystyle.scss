@@ -1,0 +1,39 @@
+$bk_color1:#161717;
+$bk_color2:#1C1D20;
+$bk_color3:#292B32;
+$bk_color4:#393D4E;
+$bk_color5:#0B1E74;
+$bk_color6:#0326C8;
+$bk_color7:#6273C0;
+$bk_color8:#46495A;
+$font_1: 'Bebas Neue',cursive;
+
+body{
+    //background-color: $background_color;
+    background-image: radial-gradient($bk_color4,$bk_color3,$bk_color2,$bk_color1);
+}
+
+
+.navbar{
+    height: 10%;
+    max-height: 50px;
+    min-height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    background-image: linear-gradient(to right,$bk_color8,$bk_color1);
+    text-align: center;
+    height: 90%;
+    margin-top: 2%;
+    width: 10%;
+    font-family: $font_1;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    a:hover{
+        color: $bk_color5;
+    }
+}
+
