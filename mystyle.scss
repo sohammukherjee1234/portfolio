@@ -7,10 +7,16 @@ $bk_color6:#0326C8;
 $bk_color7:#6273C0;
 $bk_color8:#46495A;
 $font_1: 'Bebas Neue',cursive;
-
+$font_para: 'ZCOOL QingKe HuangYou', cursive;
+$font_heading: 'Righteous', cursive;
+$font_heading2: 'Fredoka One', cursive;;
 body{
     //background-color: $background_color;
     background-image: radial-gradient($bk_color4,$bk_color3,$bk_color2,$bk_color1);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: justify;
+  text-justify: inter-word;
 }
 
 
@@ -23,6 +29,7 @@ body{
 }
 
 .navbar-nav{
+    padding: 1%;
     background-image: linear-gradient(to right,$bk_color8,$bk_color1);
     text-align: center;
     height: 90%;
@@ -36,4 +43,73 @@ body{
         color: $bk_color5;
     }
 }
+.about{
+    width: 84%;
+    margin-top: 5%;
+    margin-left: 8%;
+}
 
+.pic{
+    margin-left: 40%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("Image1.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;    
+    //box-shadow: 0px 0px 20px #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.intro{
+    color: white;
+    font-family: $font_para;
+    padding: 1%;
+    font-size: 1.5em;
+}
+@-webkit-keyframes glow{
+    from{
+            box-shadow: 0px 0px 5px black;
+    }
+    to{
+            box-shadow:0px 0px 25px white;
+    }
+}
+.work{
+    color: white;
+    font-family: $font_heading;
+    font-size: 2em;
+    margin: 1%;
+}
+.exp{
+    color: white;
+    font-family: $font_heading2;
+    font-size: 1.7em;
+    margin: 1%;
+    margin-left: 5%;
+}
+.det{
+    color: white;
+    font-family: $font_para;
+    font-size: 1.5em;
+    margin: 1%;
+    margin-left: 10%;
+}
+@mixin pad {
+    padding: 0px;
+}
+h1{
+    @include pad;
+}
+h2{
+    @include pad;
+}
+p{
+    @include pad;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
