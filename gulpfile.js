@@ -38,11 +38,11 @@ gulp.task('clean-html', function(){
 
 
 gulp.task('watch-tasks', function(){
-	gulp.watch(path.join('src', 'scss', '*.scss'), ['clean-css', 'css']);
-	gulp.watch(path.join('src', '*html'), ['clean-html', 'html']);
+	gulp.watch(path.join('src', 'scss', '*.scss'), gulp.series('clean-css', 'css'));
+	gulp.watch(path.join('src', '*html'), gulp.series('clean-html', 'html'));
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series('watch-tasks'));
 
 
 
