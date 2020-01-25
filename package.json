@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sohammukherjee1234/portfolio/issues"
   },
-  "homepage": "https://github.com/sohammukherjee1234/portfolio#readme"
+  "homepage": "https://github.com/sohammukherjee1234/portfolio#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }
