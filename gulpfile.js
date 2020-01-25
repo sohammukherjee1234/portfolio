@@ -15,7 +15,6 @@ gulp.task('css', function(){
 			.pipe(autoPrefixer({cascade: false}))
 			.pipe(cleanCss())
 			.pipe(concat('style.css'))
-			.pipe(uglify())
 			.pipe(gulp.dest('dist'));
 });
 
