@@ -11,8 +11,10 @@ $scroll_track: #5c97bf;
 $font_1: 'Bebas Neue',cursive;
 //$font_para: 'ZCOOL QingKe HuangYou', cursive;
 $font_para: 'Satisfy', cursive;
-$font_heading: 'Righteous', cursive;
-$font_heading2: 'Fredoka One', cursive;;
+//$font_heading: 'Righteous', cursive;
+$font_heading: 'Arvo', serif;
+//$font_heading2: 'Fredoka One', cursive;
+$font_heading2: 'Lato', sans-serif;
 body{
     //background-color: $background_color;
     background-image: radial-gradient($bk_color4,$bk_color3,$bk_color2,$bk_color1);
@@ -179,35 +181,43 @@ a{
 }
 
 .facebook-icon{
-    content: url("images/facebook-48.png");
-
+    content: url("images/facebook-56.png");
+    width: 48px;
+    height: 48px;
+    
     &:hover{
-        content: url("images/facebook-56.png");
+        transform: scale(1.16);
     }
     
 }
 
 .linkedin-icon{
-    content: url("images/linkedin-48.png");
+    content: url("images/linkedin-56.png");
+    width: 48px;
+    height: 48px;
     
     &:hover{
-        content: url("images/linkedin-56.png");
+        transform: scale(1.16);
     }
 }
 
 .email-icon{
-    content: url("images/email-48.png");
-   
+    content: url("images/email-56.png");
+    width: 48px;
+    height: 48px;
+    
     &:hover{
-        content: url("images/email-56.png");
+        transform: scale(1.16);
     }
 }
 
 .github-icon{
-    content: url("images/github-48.png");
-   
+    content: url("images/github-56.png");
+    width: 48px;
+    height: 48px;
+    
     &:hover{
-        content: url("images/github-56.png");
+        transform: scale(1.16);
     }
 }
 
