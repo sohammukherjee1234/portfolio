@@ -15,42 +15,42 @@ gulp.task('css', function(){
 			.pipe(autoPrefixer({cascade: false}))
 			.pipe(cleanCss())
 			.pipe(concat('style.css'))
-			.pipe(gulp.dest('dist'));
+			.pipe(gulp.dest('docs'));
 });
 
 gulp.task('html', function(){
 	return gulp.src(path.join('src', '*.html'))
 			.pipe(htmlMinifier({collapseWhitespace: true}))
-			.pipe(gulp.dest('dist'));
+			.pipe(gulp.dest('docs'));
 });
 
 gulp.task('images', function(){
 	return gulp.src(path.join('src', 'images', '*'))
-			.pipe(gulp.dest(path.join('dist', 'images')));
+			.pipe(gulp.dest(path.join('docs', 'images')));
 })
 
 gulp.task('clean-css', function(){
-	return del(path.join('dist', '*.css'));
+	return del(path.join('docs', '*.css'));
 });
 
 gulp.task('clean-html', function(){
-	return del(path.join('dist', '*.html'));
+	return del(path.join('docs', '*.html'));
 });
 
 
 gulp.task('clear', function(){
-	return del('dist');
+	return del('docs');
 });
 
 gulp.task('clean-js', function(){
-	return del(path.join('dist', '*.js'));
+	return del(path.join('docs', '*.js'));
 });
 
 gulp.task('js', function(){
 	return gulp.src(path.join('src', 'js', '*.js'))
 				.pipe(concat('all.js'))
 				.pipe(uglify())
-				.pipe(gulp.dest('dist'));
+				.pipe(gulp.dest('docs'));
 })
 
 
