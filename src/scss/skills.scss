@@ -1,0 +1,126 @@
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-wrapper{
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 10%;
+    h2{
+        align-self: center;
+        color: #777;
+        transition: 0.5s;
+    }
+    
+    
+    div{
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        svg{
+            width: 160px;
+            height: 160px;
+            circle{
+                stroke: #434343;
+                stroke-width: 10px; 
+                fill: none;
+            
+            }
+         
+        }
+        div{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            
+            h2{
+                font-size: 40px;
+                color: #777;
+                transition: 0.5s;
+                span{
+                    font-size: 40px;
+                    color: #777;
+                }
+            }
+        }
+
+       
+    }
+
+    &:hover{
+        h2{
+            transform: scale(1.5);
+            color: #fff;
+        }
+        div{
+            h2{
+                font-size: 50px;
+                color: #fff;
+                span{
+                    font-size: 24px;
+                    color: #777;
+                }
+            }
+        }
+    }
+}
+
+.skill-hover{
+    color: #777;
+}
+
+.circle{
+    stroke-dasharray: 440;
+   
+
+   
+}
+
+.green{
+    stroke: #00ff43 !important;
+}
+
+
+[score="90"]{
+    div{
+        svg{
+            .circle{
+                stroke-dashoffset: calc(440 - (440*90)/100);
+            }
+        }
+    }
+}
+
+[score="80"]{
+    div{
+        svg{
+            .circle{
+                stroke-dashoffset: calc(440 - (440*80)/100);
+            }
+        }
+    }
+}
+
+[score="70"]{
+    div{
+        svg{
+            .circle{
+                stroke-dashoffset: calc(440 - (440*70)/100);
+            }
+        }
+    }
+}
+
+

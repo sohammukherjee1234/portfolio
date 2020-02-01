@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".skill-wrapper").hover(function(){var t=440-440*$(this).attr("score")/100;$(this).find(".circle").animate({"stroke-dashoffset":440},"fast",function(){$(this).animate({"stroke-dashoffset":t})})},function(){})});
