@@ -8,12 +8,12 @@ $bk_color7:#6273C0;
 $bk_color8:#46495A;
 $footer_background: #434343;
 $scroll_track: #5c97bf;
-$font_1: 'Bebas Neue',cursive;
 
-$font_para: 'Open Sans', sans-serif;
-//$font_para: 'Satisfy', cursive;
-$font_heading: 'Arvo', serif;
-$font_heading2: 'Lato', sans-serif;
+
+$font_para:  'Josefin Slab', serif;
+$font_heading: 'Alegreya', serif;
+
+
 body{
     //background-color: $background_color;
     background-image: radial-gradient($bk_color4,$bk_color3,$bk_color2,$bk_color1);
@@ -33,7 +33,7 @@ body{
 
 .secondary-header{
     color: white;
-    font-family: $font_heading2;
+    font-family: $font_heading;
     font-size: 1.7em;
     margin: 1%;
     margin-left: 5%;
@@ -80,6 +80,47 @@ body{
     }
     to{
             box-shadow:0px 0px 25px white;
+    }
+}
+
+.contact-information{
+    align-self: center;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    button{
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        font-family: $font_heading;
+        font-size: 1.2em;
+        background-color: $footer_background;
+        color: #fff;
+        border: none;
+       
+        font-weight: bolder;
+
+        span{
+            transform: rotate(90deg);
+            
+        }
+    }
+
+    .contact-data{
+        background-color: $footer_background;
+        color: #fff;
+        width: 100%;
+        
+        display: none;
+        font-family: $font_para;
+        display: flex;
+        flex-direction: column;      
+        span{
+            i{
+                font-size: 18px;
+            }
+        }  
+        
     }
 }
 
