@@ -12,4 +12,16 @@ $(document).ready(function(){
         }
         $("#contact-data").toggle("slow");
     });
-})
+});
+
+$(document).ready(function () {
+    $("#call-btn").click(function(){
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val("+917872636902").select();
+        document.execCommand("copy");
+        $temp.remove();
+    });
+  });
+
+
