@@ -21,6 +21,19 @@ body{
     overflow-x: hidden;
     text-align: justify;
   text-justify: inter-word;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.parallax{
+    width: 100%;
+    height: calc(100vh);
+    background: url("./images/me.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
 }
 
 .section-header{
@@ -270,5 +283,4 @@ a{
   }
 
   
-
 
